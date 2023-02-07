@@ -10,8 +10,8 @@
     <meta http-equiv="Expires" content="0">
 
     <title>CIMS Download</title>
-    <link href="https://github.com/torokoid/konayuki/blob/main)/index.css" rel="stylesheet">
-    <link href="https://github.com/torokoid/konayuki/blob/main)/slide.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slide.css">
     <script type="text/javascript" src="https://github.com/torokoid/konayuki/blob/main/jquery.min.js.ダウンロード"></script>
 
     <!-- 粉雪 -->
@@ -25,7 +25,7 @@
               new Foler('fffff1').start();
           });
     </script> -->
-
+<!--
 <style type="text/css">
 html {
     margin: 0;
@@ -148,7 +148,7 @@ table, th, td {
 }
 
 </style>
-
+-->
 
 </head>
 <body>

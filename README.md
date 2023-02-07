@@ -12,7 +12,7 @@
     <title>CIMS Download</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="slide.css">
-    <script src="query.min.js.ダウンロード"></script>
+    <script src="jquery.min.js.ダウンロード"></script>
 
     <!-- 粉雪 -->
     <script src="ms.js.ダウンロード"></script>

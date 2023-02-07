@@ -26,6 +26,7 @@
           });
     </script> -->
 
+<style type="text/css">
 html {
     margin: 0;
     padding: 0;
@@ -146,7 +147,7 @@ table, th, td {
     border:none;
 }
 
-
+</style>
 
 
 </head>

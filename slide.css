@@ -1,0 +1,99 @@
+﻿.slider_slider {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.slider_title {
+  position: absolute;
+  background-image: url("./img/img_logo_head_ACCORD.png");
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 32px;
+  left: calc(100% - 400px);
+  top: 20px;
+}
+.slider_imgbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slider_img {
+  position: absolute;
+  opacity: 0;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 230px;
+  left: calc(100% - 400px);
+  top: 40px;
+  -webkit-animation: anime 60s 0s infinite;
+  animation: anime 60s 0s infinite;
+  vertical-align: bottom;
+}
+.slider_img_desc {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  left: 160px;
+  top: 160px;
+  height: 62px;
+  width: 130px;
+  padding: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slider_img_desc.new {
+  left: 80px;
+  top: 160px;
+  height: 90px;
+  width: 240px;
+}
+
+@keyframes anime {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  10% {opacity: 1;}
+  15% {opacity: 0; z-index: -9;}
+  100% { opacity: 0; }
+}
+
+.slider_img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s; }
+
+.slider_img:nth-of-type(2) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s; }
+
+.slider_img:nth-of-type(3) {
+  -webkit-animation-delay: 18s;
+  animation-delay: 18s; }
+
+.slider_img:nth-of-type(4) {
+  -webkit-animation-delay: 24s;
+  animation-delay: 24s; }
+
+.slider_img:nth-of-type(5) {
+  -webkit-animation-delay: 30s;
+  animation-delay: 30s; }
+
+.slider_img:nth-of-type(6) {
+  -webkit-animation-delay: 36s;
+  animation-delay: 36s; }
+
+.slider_img:nth-of-type(7) {
+  -webkit-animation-delay: 42s;
+  animation-delay: 42s; }
+
+.slider_img:nth-of-type(8) {
+  -webkit-animation-delay: 48s;
+  animation-delay: 48s; }
+
+.slider_img:nth-of-type(9) {
+  -webkit-animation-delay: 54s;
+  animation-delay: 54s; }

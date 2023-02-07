@@ -1,0 +1,45 @@
+(function () {
+
+  var list = [
+    "1976"
+    , "1981"
+    , "1985"
+    , "1989"
+    , "1993"
+    , "1997"
+    , "2002"
+    , "2008"
+    , "2013"
+    , "2020"
+  ];
+
+  var slider = document.createElement("div");
+  slider.className = "slider_slider";
+  document.body.appendChild(slider);
+
+  var title = document.createElement("div");
+  title.className = "slider_title";
+  slider.appendChild(title);
+
+  var imgbox = document.createElement("div");
+  imgbox.className = "slider_imgbox";
+  slider.appendChild(imgbox);
+
+  list.forEach(function(v) {
+    var itm = document.createElement("div");
+    itm.className = "slider_img";
+    itm.style.backgroundImage = 'url(./img/car_' + v + '.png)';
+    imgbox.appendChild(itm);
+
+    var c = document.createElement("div");
+    if (v === "2020")
+      c.className = "slider_img_desc new";
+    else
+      c.className = "slider_img_desc";
+    c.style.backgroundImage = 'url(./img/history_' + v + '.png)';
+    itm.appendChild(c);
+  });
+
+})();
+
+

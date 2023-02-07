@@ -44,9 +44,9 @@
         <span>d</span>
     </h2>
     
-<!--
+
         <!-- 申請書 -->
-        <div class="midasi2">■&nbsp;申請書&nbsp;-&nbsp;Application form</div>
+<!--        <div class="midasi2">■&nbsp;申請書&nbsp;-&nbsp;Application form</div>
         <div style="padding-left:12px;">
             <div style="padding-top:8px;">1. <a href="http://qctcert-cims.hm.jp.honda.com/download/CIMS_AccountRegistration_14.xlsx">アクセス権申請 - Application for access permission</a></div>
         </div>
@@ -54,7 +54,7 @@
         <br>
 
         <!-- 標準日程 -->
-        <div class="midasi2">■&nbsp;標準日程&nbsp;-&nbsp;Standard event schedule</div>
+<!--        <div class="midasi2">■&nbsp;標準日程&nbsp;-&nbsp;Standard event schedule</div>
         <div style="padding-left:12px;">
             <table>
                 <tbody><tr>
@@ -86,7 +86,7 @@
         <br>
 
         <!-- セットアップ -->
-        <div class="midasi2">■&nbsp;セットアップ&nbsp;-&nbsp;Setup&nbsp;(ver2)</div>
+<!--        <div class="midasi2">■&nbsp;セットアップ&nbsp;-&nbsp;Setup&nbsp;(ver2)</div>
         <div style="padding-left:12px;">
             <div style="padding-top:8px;">1. <a href="http://qctcert-cims.hm.jp.honda.com/download/setup/setupcims_7.exe">exe&nbsp;file</a></div>
             <div style="padding-top:8px;">
@@ -110,7 +110,7 @@
             <br>
 
             <!-- 概要説明 -->
-            <div class="midasi2">■&nbsp;説明&nbsp;-&nbsp;Description</div>
+<!--            <div class="midasi2">■&nbsp;説明&nbsp;-&nbsp;Description</div>
             <div style="padding-left:12px;">
                 <div style="padding-top:8px;">
                     1. 日程管理&nbsp;&nbsp;操作説明書&nbsp;-&nbsp;Event&nbsp;management&nbsp;Operation&nbsp;manual

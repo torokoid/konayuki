@@ -10,8 +10,8 @@
     <meta http-equiv="Expires" content="0">
 
     <title>CIMS Download</title>
-    <link href="./CIMS Download_files/index.css" rel="stylesheet">
-    <link href="./CIMS Download_files/slide.css" rel="stylesheet">
+    <link href="https://github.com/torokoid/konayuki/blob/main)/index.css" rel="stylesheet">
+    <link href="https://github.com/torokoid/konayuki/blob/main)/slide.css" rel="stylesheet">
     <script type="text/javascript" src="https://github.com/torokoid/konayuki/blob/main/jquery.min.js.ダウンロード"></script>
 
     <!-- 粉雪 -->

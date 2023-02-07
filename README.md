@@ -12,10 +12,10 @@
     <title>CIMS Download</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="slide.css">
-    <script type="text/javascript" href="https://github.com/torokoid/konayuki/blob/main/jquery.min.js.ダウンロード"></script>
+    <script type="text/javascript" src=<href="https://github.com/torokoid/konayuki/blob/main/jquery.min.js.ダウンロード">></script>
 
     <!-- 粉雪 -->
-    <script type="text/javascript" href="https://github.com/torokoid/konayuki/blob/main/ms.js.ダウンロード"></script>
+    <script type="text/javascript" src=<href="https://github.com/torokoid/konayuki/blob/main/ms.js.ダウンロード">></script>
     
 
     <!-- 文字落 -->
@@ -43,6 +43,8 @@
         <span>a</span>
         <span>d</span>
     </h2>
+    
+    <!--
         <!-- 申請書 -->
         <div class="midasi2">■&nbsp;申請書&nbsp;-&nbsp;Application form</div>
         <div style="padding-left:12px;">
@@ -141,7 +143,7 @@
                 </div>
             </div>
         </div>
-
+-->
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

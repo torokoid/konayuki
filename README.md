@@ -1,6 +1,6 @@
 # konayuki
 
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -25,6 +25,129 @@
               new Foler('fffff1').start();
           });
     </script> -->
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: rgba(41, 41, 41, 0.979);
+  border-top: solid 10px black;
+  color: whitesmoke;
+  font-size: .85em;
+  font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.midasi1 {
+  color: rgba(41, 41, 41, 0.979);
+  font-size: 1.75em;
+}
+.midasi1>span {
+  box-sizing: border-box;
+}
+@keyframes animatetoright {
+  100% {
+    color: whitesmoke;
+  }
+}
+@-webkit-keyframes animatetoright {
+  100% {
+    color: whitesmoke;
+  }
+}
+@keyframes leftborder {
+  100% {
+    border-bottom: 4px solid gray;
+  }
+}
+@-webkit-keyframes leftborder {
+  100% {
+    border-bottom: 4px solid gray;
+  }
+}
+.midasi1 span:nth-child(1) {
+  animation:         animatetoright 0.3s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.3s 1;
+  -webkit-animation: animatetoright 0.3s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.3s 1;
+}
+.midasi1 span:nth-child(2) {
+  animation:         animatetoright 0.4s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.4s 1;
+  -webkit-animation: animatetoright 0.4s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.4s 1;
+}
+.midasi1 span:nth-child(3) {
+  animation:         animatetoright 0.5s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.5s 1;
+  -webkit-animation: animatetoright 0.5s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.5s 1;
+}
+.midasi1 span:nth-child(4) {
+  animation:         animatetoright 0.6s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.6s 1;
+  -webkit-animation: animatetoright 0.6s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.6s 1;
+}
+.midasi1 span:nth-child(5) {
+  animation:         animatetoright 0.7s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.7s 1;
+  -webkit-animation: animatetoright 0.7s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.7s 1;
+}
+.midasi1 span:nth-child(6) {
+  animation:         animatetoright 0.8s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.8s 1;
+  -webkit-animation: animatetoright 0.8s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.8s 1;
+}
+.midasi1 span:nth-child(7) {
+  animation:         animatetoright 0.9s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.9s 1;
+  -webkit-animation: animatetoright 0.9s step-end 0s 1 normal forwards, leftborder 0.1s step-start 0.9s 1;
+}
+.midasi1 span:nth-child(8) {
+  animation:         animatetoright 1.0s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.0s 1;
+  -webkit-animation: animatetoright 1.0s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.0s 1;
+}
+.midasi1 span:nth-child(9) {
+  animation:         animatetoright 1.1s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.1s 1;
+  -webkit-animation: animatetoright 1.1s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.1s 1;
+}
+.midasi1 span:nth-child(10) {
+  animation:         animatetoright 1.2s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.2s 1;
+  -webkit-animation: animatetoright 1.2s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.2s 1;
+}
+.midasi1 span:nth-child(11) {
+  animation:         animatetoright 1.3s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.3s 1;
+  -webkit-animation: animatetoright 1.3s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.3s 1;
+}
+.midasi1 span:nth-child(12) {
+  animation:         animatetoright 1.4s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.4s 1;
+  -webkit-animation: animatetoright 1.4s step-end 0s 1 normal forwards, leftborder 0.1s step-start 1.4s 1;
+}
+
+
+.midasi2 {
+  color: rgb(129, 184, 247);
+}
+
+a {
+    color: whitesmoke;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+a:link, a:visited{
+    color: whitesmoke;
+}
+
+a:active, a:hover {
+    color: rgb(245, 89, 78);
+}
+
+header, footer, hgroup, nav, section {
+    display: block;
+}
+
+table, th, td {
+    border:none;
+}
+
+
+
 
 </head>
 <body>

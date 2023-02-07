@@ -12,14 +12,11 @@
     <title>CIMS Download</title>
     <link href="./CIMS Download_files/index.css" rel="stylesheet">
     <link href="./CIMS Download_files/slide.css" rel="stylesheet">
-    <script type="text/javascript" src="./CIMS Download_files/jquery.min.js.ダウンロード"></script>
+    <script type="text/javascript" src="https://github.com/torokoid/konayuki/blob/main/jquery-3.6.3.min.js"></script>
 
     <!-- 粉雪 -->
     <script type="text/javascript" src="./CIMS Download_files/ms.js.ダウンロード"></script>
     
-    <script type='text/javascript' src='https://torokoid.github.io/shiba/jquery.js?ver=1.12.4'></script>
-    <script src="https://torokoid.github.io/shiba/jquery.goup.min.js"></script>
-    <script src="https://torokoid.github.io/shiba/my.js"></script> 
 
     <!-- 文字落 -->
     <!-- <script type="text/javascript" src="foledwn.js"></script>

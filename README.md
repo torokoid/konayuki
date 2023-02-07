@@ -12,10 +12,10 @@
     <title>CIMS Download</title>
     <link href="./CIMS Download_files/index.css" rel="stylesheet">
     <link href="./CIMS Download_files/slide.css" rel="stylesheet">
-    <script type="text/javascript" src="https://github.com/torokoid/konayuki/blob/main/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="https://github.com/torokoid/konayuki/blob/main/jquery.min.js.ダウンロード"></script>
 
     <!-- 粉雪 -->
-    <script type="text/javascript" src="./CIMS Download_files/ms.js.ダウンロード"></script>
+    <script type="text/javascript" src="https://github.com/torokoid/konayuki/blob/main/ms.js.ダウンロード"></script>
     
 
     <!-- 文字落 -->

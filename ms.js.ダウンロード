@@ -1,0 +1,240 @@
+function ms() {
+  document.onmousemove = this.mouse;
+  window.onscroll=this.set_scroll;
+  window.onresize = this.set_width;
+  var _this = this;
+  $(document).ready( function(){
+    if (document.getElementById) {
+      var i, rats, rlef, rdow;
+      for (var i=0; i<_this.sparkles; i++) {
+        var rats = _this.createDiv(3, 3);
+        if (rats) {
+          rats.style.visibility = "hidden";
+          rats.style.zIndex = "999";
+          document.body.appendChild(_this.tiny[i] = rats);
+          _this.starv[i] = 0;
+          _this.tinyv[i] = 0;
+          var rats2 = _this.createDiv(5, 5);
+          rats2.style.backgroundColor = "transparent";
+          rats2.style.visibility = "hidden";
+          rats2.style.zIndex = "999";
+          var rlef = _this.createDiv(1, 5);
+          var rdow = _this.createDiv(5, 1);
+          rats2.appendChild(rlef);
+          rats2.appendChild(rdow);
+          rlef.style.top = "2px";
+          rlef.style.left = "0px";
+          rdow.style.top = "0px";
+          rdow.style.left = "2px";
+          document.body.appendChild(_this.star[i] = rats2);
+        }
+      }
+      _this.set_width();
+      _this.sparkle();
+    }
+  });
+};
+ms.prototype={
+  itemcolor:null,
+  sparkles:50,
+	x:400,
+	y:300,
+	ox:400,
+	oy:300,
+	swide:800,
+	shigh:600,
+	sleft:0,
+  sdown: 0,
+  timeout: 26,
+	tiny:new Array(),
+	star:new Array(),
+	starv:new Array(),
+	starx:new Array(),
+	stary:new Array(),
+	tinyx:new Array(),
+	tinyy:new Array(),
+  tinyv: new Array(),
+  
+  sparkle: function () {
+    if (MS.star[0] == null) return;
+    var c;
+    if (Math.abs(MS.x-MS.ox)>1 || Math.abs(MS.y-MS.oy)>1) {
+      MS.ox=MS.x;
+      MS.oy=MS.y;
+      for (c=0; c<MS.sparkles; c++) if (!MS.starv[c]) {
+        MS.star[c].style.left=(MS.starx[c]=MS.x)+"px";
+        MS.star[c].style.top=(MS.stary[c]=MS.y+1)+"px";
+        MS.star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+        MS.star[c].style.visibility="visible";
+        MS.starv[c]=MS.sparkles;
+        break;
+      }
+    }
+    for (c=0; c<MS.sparkles; c++) {
+      if (MS.starv[c]) MS.update_star(c);
+      if (MS.tinyv[c]) MS.update_tiny(c);
+    }
+    setTimeout("MS.sparkle()", MS.timeout);
+  },
+
+  update_star: function (i) {
+    if (--MS.starv[i]==25) MS.star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+    if (MS.starv[i]) {
+      MS.stary[i]+=1+Math.random()*3;
+      MS. starx[i]+=(i%5-2)/5;
+      if (MS.stary[i]<MS.shigh+MS.sdown) {
+        MS.star[i].style.top=MS.stary[i]+"px";
+        MS.star[i].style.left=MS.starx[i]+"px";
+      }
+      else {
+        MS.star[i].style.visibility="hidden";
+        MS.starv[i]=0;
+        return;
+      }
+    }
+    else {
+      MS.tinyv[i]=MS.sparkles;
+      MS.tiny[i].style.top=(MS.tinyy[i]=MS.stary[i])+"px";
+      MS.tiny[i].style.left=(MS.tinyx[i]=MS.starx[i])+"px";
+      MS.tiny[i].style.width="2px";
+      MS.tiny[i].style.height="2px";
+      MS.tiny[i].style.backgroundColor=MS.star[i].childNodes[0].style.backgroundColor;
+      MS.star[i].style.visibility="hidden";
+      MS.tiny[i].style.visibility="visible"
+    }
+  },
+  update_tiny: function (i) {
+    if (--MS.tinyv[i]==25) {
+      MS.tiny[i].style.width="1px";
+      MS.tiny[i].style.height="1px";
+    }
+    if (MS.tinyv[i]) {
+      MS.tinyy[i]+=1+Math.random()*3;
+      MS.tinyx[i]+=(i%5-2)/5;
+      if (MS.tinyy[i]<MS.shigh+MS.sdown) {
+        MS.tiny[i].style.top=MS.tinyy[i]+"px";
+        MS.tiny[i].style.left=MS.tinyx[i]+"px";
+      }
+      else {
+        MS.tiny[i].style.visibility="hidden";
+        MS.tinyv[i]=0;
+        return;
+      }
+    }
+    else MS.tiny[i].style.visibility="hidden";
+  },
+  mouse:function (e) {
+    if (e) {
+      MS.y=e.pageY;
+      MS.x=e.pageX;
+    }
+    else {
+      set_scroll();
+      MS.y=event.y+MS.sdown;
+      MS.x=event.x+MS.sleft;
+    }
+  },
+  set_scroll: function () {
+    if (typeof(self.pageYOffset)=='number') {
+      MS.sdown=self.pageYOffset;
+      MS.sleft=self.pageXOffset;
+    }
+    else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+      MS.sdown=document.body.scrollTop;
+      MS.sleft=document.body.scrollLeft;
+    }
+    else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+      MS.sleft=document.documentElement.scrollLeft;
+      MS.sdown=document.documentElement.scrollTop;
+    }
+    else {
+      MS.sdown=0;
+      MS.sleft=0;
+    }
+  },
+  set_width:function () {
+    var sw_min=999999;
+    var sh_min=999999;
+    if (document.documentElement && document.documentElement.clientWidth) {
+      if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+      if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+    }
+    if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+      if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+      if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+    }
+    if (document.body.clientWidth) {
+      if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+      if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+    }
+    if (sw_min==999999 || sh_min==999999) {
+      sw_min=800;
+      sh_min=600;
+    }
+    MS.swide=sw_min;
+    MS.shigh=sh_min;
+  },
+  createDiv: function (height, width) {
+    var elemcolor = MS.newColor();
+    if (elemcolor) {
+      var div = document.createElement("div");
+      div.style.position = "absolute";
+      div.style.height = height + "px";
+      div.style.width = width + "px";
+      div.style.overflow = "hidden";
+      div.style.backgroundColor = elemcolor;
+      return (div);
+    } else {
+      return null;
+    }
+  },
+  newColor: function () {
+    if (MS.itemcolor == null) {
+	  	var m = new Date().getMonth() + 1;
+      var d = new Date().getDay();
+      MS.itemcolor = null;
+	  	if(m==1) {
+	  		MS.itemcolor = 'lightgray';
+	  	} else if(m==2) {
+	  		MS.itemcolor = 'lightgray';
+	  	} else if(m==3) {
+	  		// MS.itemcolor = 'pink';
+	  	} else if(m==4) {
+	  		// MS.itemcolor = 'pink';
+	  	} else if(m==5) {
+	  		MS.itemcolor = null;
+	  	} else if(m==6) {
+	  		// MS.itemcolor = '#CCFFFF';
+	  	} else if(m==7) {
+	  		if (d==7) {
+	  			MS.itemcolor = 'random';
+	  		} else {
+	  			MS.itemcolor = null;
+	  		}
+	  	} else if(m==8) {
+	  		MS.itemcolor = null;
+	  	} else if(m==9) {
+	  		MS.itemcolor = null;
+	  	} else if(m==10) {
+	  		// MS.itemcolor = '#FFCC66';
+	  	} else if(m==11) {
+	  		// MS.itemcolor = '#FFCC66';
+	  	} else { //12
+	  		MS.itemcolor = 'lightgray';
+      }
+    }
+    
+    if (MS.itemcolor == 'random') {
+	    var c=new Array();
+	    c[0]=255;
+	    c[1]=Math.floor(Math.random()*256);
+	    c[2]=Math.floor(Math.random()*(256-c[1]/2));
+	    c.sort(function(){return (0.5 - Math.random());});
+	    return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
+    } else {
+        return MS.itemcolor;
+    }
+  },
+}
+var MS=new ms();
+

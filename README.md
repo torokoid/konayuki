@@ -42,18 +42,104 @@
         <span>a</span>
         <span>d</span>
     </h2>
-    <br>
-
+        <!-- 申請書 -->
+        <div class="midasi2">■&nbsp;申請書&nbsp;-&nbsp;Application form</div>
+        <div style="padding-left:12px;">
+            <div style="padding-top:8px;">1. <a href="http://qctcert-cims.hm.jp.honda.com/download/CIMS_AccountRegistration_14.xlsx">アクセス権申請 - Application for access permission</a></div>
+        </div>
         <br>
         <br>
 
-
+        <!-- 標準日程 -->
+        <div class="midasi2">■&nbsp;標準日程&nbsp;-&nbsp;Standard event schedule</div>
+        <div style="padding-left:12px;">
+            <table>
+                <tbody><tr>
+                    <td style="width:140px;">
+                        . <a id="sd31fmc" href="http://qctcert-cims.hm.jp.honda.com/download/standard_schedule/3-1FMCS.html" target="_blank">3-1 FMC</a>
+                    </td>
+                    <td>
+                        . <a id="sda" href="http://qctcert-cims.hm.jp.honda.com/download/standard_schedule/a.html" target="_blank">Appli Appr Event</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        . <a id="sd31mmc" href="http://qctcert-cims.hm.jp.honda.com/download/standard_schedule/3-1MMCS.html" target="_blank">3-1 MMC</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        . <a id="sd0" href="http://qctcert-cims.hm.jp.honda.com/download/standard_schedule/s.html" target="_blank">Speed</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        . <a id="sd1" href="http://qctcert-cims.hm.jp.honda.com/download/standard_schedule/9.html" target="_blank">9中</a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
         <br>
         <br>
 
-
+        <!-- セットアップ -->
+        <div class="midasi2">■&nbsp;セットアップ&nbsp;-&nbsp;Setup&nbsp;(ver2)</div>
+        <div style="padding-left:12px;">
+            <div style="padding-top:8px;">1. <a href="http://qctcert-cims.hm.jp.honda.com/download/setup/setupcims_7.exe">exe&nbsp;file</a></div>
+            <div style="padding-top:8px;">
+                2. <a href="http://qctcert-cims.hm.jp.honda.com/download/setup/setupcims_7.zip">zip&nbsp;file</a>
+                <div style="padding-left:14px;">※解凍後 Setup01.exe を実行してください - Please execute Setup01.exe after unzip</div>
+            </div>
+            <div>
+                <div style="padding-left:14px;">
+                    ※Install movie&nbsp;&nbsp;
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/setup/m_setup_4.zip">zip&nbsp;file</a>&nbsp;
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/setup/m_setup.htm" target="_blank">play</a>
+                </div>
+                <p>
+                    </p><div>
+                        <div>※Microsoft .NET Framework 4.5.2</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://qctcert-cims.hm.jp.honda.com/download/fw/NDP452-KB2901954-Online.exe">Online Installer</a></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://qctcert-cims.hm.jp.honda.com/download/fw/NDP452-KB2901907-x86-x64-AllOS-ENU.exe">Offline Installer</a></div>
+                    </div>
+            </div>
             <br>
             <br>
+
+            <!-- 概要説明 -->
+            <div class="midasi2">■&nbsp;説明&nbsp;-&nbsp;Description</div>
+            <div style="padding-left:12px;">
+                <div style="padding-top:8px;">
+                    1. 日程管理&nbsp;&nbsp;操作説明書&nbsp;-&nbsp;Event&nbsp;management&nbsp;Operation&nbsp;manual
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_Operation_20171219_ja.pdf">日本語</a>
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_Operation_20171219_en.pdf">English</a>
+                </div>
+                <div style="padding-top:8px;">
+                    2. ユーザー情報修正動画&nbsp;-&nbsp;Update&nbsp;user&nbsp;infomation
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/m_upduserinfo_2.zip">zip&nbsp;file</a>&nbsp;
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/m_upduserinfo.htm" target="_blank">play</a>
+                </div>
+                <div style="padding-top:8px;">
+                    3. 新法規&nbsp;システム説明&nbsp;-&nbsp;System&nbsp;instruction&nbsp;of new-regulation
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_NewReg_1_20170808_ja.pdf">日本語</a>
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_NewReg_1_20170808_en.pdf">English</a>
+                </div>
+                <div style="padding-top:8px;">
+                    4. 新法規&nbsp;操作説明&nbsp;-&nbsp;OM&nbsp;of&nbsp;the&nbsp;New&nbsp;Reg.
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_NewReg_2_20170811_ja.pdf">日本語</a>
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_NewReg_2_20170811_en.pdf">English</a>
+                </div>
+                <div style="padding-top:8px;">
+                    5. 新法規&nbsp;操作説明(抜粋版)&nbsp;-&nbsp;Extract&nbsp;Version&nbsp;of&nbsp;OM&nbsp;of&nbsp;New&nbsp;Reg.
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_NewReg_3_20170822_ja.pdf">日本語</a>
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_NewReg_3_20170821_en.pdf">English</a>
+                </div>
+                <div style="padding-top:8px;">
+                    6. 車両管理システム説明
+                    <a href="http://qctcert-cims.hm.jp.honda.com/download/manual/CIMS_Vehicle_2.pdf">説明書</a>
+                </div>
+            </div>
+        </div>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

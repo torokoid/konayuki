@@ -30,18 +30,14 @@
 </head>
 <body>
     <h2 class="midasi1">
-        <span>C</span>
+        <span>K</span>
+        <span>O</span>
+        <span>N</span>
+        <span>A&nbsp;</span>
+        <span>Y</span>
+        <span>U</span>
+        <span>K</span>
         <span>I</span>
-        <span>M</span>
-        <span>S&nbsp;</span>
-        <span>D</span>
-        <span>o</span>
-        <span>w</span>
-        <span>n</span>
-        <span>l</span>
-        <span>o</span>
-        <span>a</span>
-        <span>d</span>
     </h2>
     
 

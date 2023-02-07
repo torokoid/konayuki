@@ -16,6 +16,10 @@
 
     <!-- 粉雪 -->
     <script type="text/javascript" src="./CIMS Download_files/ms.js.ダウンロード"></script>
+    
+    <script type='text/javascript' src='https://torokoid.github.io/shiba/jquery.js?ver=1.12.4'></script>
+    <script src="https://torokoid.github.io/shiba/jquery.goup.min.js"></script>
+    <script src="https://torokoid.github.io/shiba/my.js"></script> 
 
     <!-- 文字落 -->
     <!-- <script type="text/javascript" src="foledwn.js"></script>
